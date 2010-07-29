@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+	<binding fileName="modules/form/persistentdocument/import/form_binding.xml" />
+	<binding fileName="modules/inquiry/persistentdocument/import/inquiry_binding.xml" />
+	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
+	<binding fileName="modules/joboffer/persistentdocument/import/joboffer_binding.xml" />
+
+	<website byTag="default_modules_website_default-website" template="webfactory/tplTwo">
+		<topic byLabel="Offres d'emploi - 2" id="topic">
+			<page byLabel="Offres d'emploi" isIndexPage="true" indexingstatus="false" navigationVisibility="hidden">
+				<tag name="functional_joboffer_offer-list" />
+				<changecontent for="content-block">
+					<changeblock type="modules_joboffer_offerList" __nbItemsPerPage="5" />
+				</changecontent>
+			</page>			
+			<page byLabel="Détail d'une offre d'emploi" isIndexPage="false" indexingstatus="false" navigationVisibility="hidden">
+				<tag name="functional_joboffer_offer-detail" />
+				<changecontent for="content-block">
+					<changeblock type="modules_joboffer_offer" />
+				</changecontent>
+			</page>
+			<page byLabel="Postuler" isIndexPage="false" indexingstatus="false" navigationVisibility="hidden">
+				<tag name="functional_joboffer_candidacy-form" />
+				<changecontent for="content-block">
+					<changeblock type="modules_joboffer_candidacy" />
+					<changeblock type="modules_form_form" />
+					<changeblock type="modules_inquiry_inquiryform" />
+				</changecontent>
+			</page>
+			<page byLabel="Candidature spontanée" isIndexPage="false" indexingstatus="false" navigationVisibility="hidden">
+				<tag name="functional_joboffer_spontaneous-candidacy" />
+				<changecontent for="content-block">
+					<changeblock type="modules_joboffer_spontaneousCandidacy" />
+					<changeblock type="modules_form_form" />
+					<changeblock type="modules_inquiry_inquiryform" />
+				</changecontent>
+			</page>
+		</topic>
+	</website>
+
+	<systemfolder module="form" relatedmodule="joboffer">
+		<documentRef type="modules_form/form" byFormid="modules_joboffer/simplecandidacy" id="sform" />
+		<documentRef type="modules_inquiry/inquiryform" byFormid="modules_joboffer/inquirycandidacy" id="iform" />
+	</systemfolder>
+	
+	<systemfolder module="list" relatedmodule="job">
+		<editablelist byListid="modules_joboffer/offertype">	
+			<item byLabel="CDI" id="cdi" />
+			<item byLabel="CDD" id="cdd" />
+			<item byLabel="Stage" id="stage" />
+		</editablelist>
+	</systemfolder>
+	
+	<rootfolder module="joboffer">
+		<linkedtopic refid="topic">
+			<offer label="Développeur web" offertype-refid="cdi" reference="OFFRE1" description="Vous participerez au développement du CMS open source RBS Change."
+				publicationstatus="ACTIVE" location="Strasbourg" background="Minimum deux ans dans le développement web."
+				profile="Bonne maitrise de la programmation orientée objet." candidacyForm-refid="sform" />
+			<offer label="Lorem ipsum dolor sit amet, consectetur adipiscing elit" offertype-refid="cdd" reference="OFFRE2" description="Quisque non sem velit. Fusce est metus, aliquet a viverra ut, elementum a purus. Vestibulum sagittis ante consectetur erat auctor a volutpat lorem tempus. Nulla facilisi. Nunc dictum lacinia lorem non vulputate. Mauris dolor arcu, placerat quis sollicitudin id, ullamcorper eget nibh. In ac nunc a eros congue mattis vel vitae dolor. Nullam justo enim, pharetra vitae interdum in, mattis sit amet felis. Sed vitae risus magna, eu hendrerit dolor. Nullam et cursus felis. Pellentesque leo tortor, dignissim sit amet bibendum non, mattis a dolor. Proin tristique turpis sed dui eleifend non consequat risus aliquam."
+				publicationstatus="ACTIVE" location="Paris" background="Sed gravida ligula et orci faucibus adipiscing."
+				profile="Aliquam id lacus ullamcorper tortor posuere sollicitudin." candidacyForm-refid="iform" />
+			<offer label="Nulla luctus urna felis" offertype-refid="cdi" reference="OFFRE3" description="Aenean a egestas turpis. Mauris luctus lorem facilisis tellus bibendum sagittis. Integer nisi felis, iaculis eu mattis eu, congue vel lectus. Quisque ac dui ac erat condimentum hendrerit quis eget mauris. Vestibulum facilisis, erat tempus feugiat imperdiet, eros massa tincidunt mi, vitae auctor purus dui vitae dolor. Nunc tortor lacus, ultricies vel mattis in, congue quis orci. Sed lobortis condimentum auctor. In in nisi leo, at tempus nisl. Phasellus hendrerit tortor eget metus ornare vulputate. Quisque sit amet consequat arcu. Donec consequat ligula ut nibh euismod vel volutpat est ultrices. Cras leo nunc, dignissim vitae aliquet quis, faucibus et tellus. Nullam libero massa, egestas nec feugiat vitae, volutpat sed sapien. Sed accumsan magna sit amet tellus aliquet aliquet. Morbi id gravida felis. Cras posuere sagittis massa et condimentum. Donec quis neque et massa ornare mollis. Donec commodo viverra ante nec eleifend. Pellentesque aliquam neque ac dui mattis id tristique mi venenatis."
+				publicationstatus="ACTIVE" location="Paris" background="Cras leo nunc, dignissim vitae aliquet quis, faucibus et tellus."
+				profile="Donec consequat ligula ut nibh euismod vel volutpat est ultrices." candidacyForm-refid="iform" />
+			<offer label="Nullam sit amet interdum odio" offertype-refid="cdd" reference="OFFRE4" description="Praesent gravida enim vitae dolor feugiat ac rutrum sapien fringilla. Sed ac enim nisi, a aliquam lacus. Nulla eu sapien a diam mollis blandit. Vivamus non odio odio, vel posuere turpis. In hendrerit tincidunt egestas. Etiam tempor dolor vel justo ullamcorper a vulputate tortor adipiscing. Mauris mattis ipsum ut dui consectetur varius. Sed tincidunt enim eros. Duis laoreet pulvinar orci et pretium."
+				publicationstatus="ACTIVE" location="Lyon" background="Curabitur lectus nisi, blandit a tincidunt a, volutpat euismod tellus."
+				profile="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas." candidacyForm-refid="iform" />
+			<offer label="In porta neque mi, in suscipit arcu" offertype-refid="stage" reference="OFFRE5" description="Mauris orci justo, mollis et consequat ultrices, lacinia ac sapien. Quisque blandit placerat magna vel laoreet. In hac habitasse platea dictumst. Aenean quis magna eu enim ullamcorper egestas. In hac habitasse platea dictumst. Nunc in ipsum eu arcu ultrices porta non ac diam. Fusce congue pretium leo in pharetra. Sed lacinia facilisis luctus. Morbi vel ante lacinia felis ultrices vehicula."
+				publicationstatus="ACTIVE" location="Lyon" background="Nulla facilisi. Mauris nibh mauris, vehicula non congue quis, venenatis vitae nibh. Integer vitae ante turpis. Curabitur sit amet mi a purus varius feugiat ut ac lacus. Duis placerat arcu fringilla tellus aliquet viverra."
+				profile="Vestibulum at sapien elit." candidacyForm-refid="iform" />
+			<offer label="Donec elementum, est ut rhoncus tempor" offertype-refid="cdi" reference="OFFRE6" description="Erat nunc sollicitudin neque, eget vestibulum lectus enim facilisis nisl. Duis quis dictum enim. Suspendisse nibh mauris, euismod ac imperdiet at, tempor eget lacus. Integer porta condimentum est, rutrum commodo elit ultrices vel. Duis eget porta massa. Aliquam malesuada nulla ut nunc rutrum scelerisque."
+				publicationstatus="ACTIVE" location="Strasbourg" background="Suspendisse vulputate hendrerit ligula eu tincidunt."
+				profile="Morbi accumsan convallis ipsum, ut sagittis risus accumsan a." candidacyForm-refid="sform" />
+			<offer label="Sed consequat pellentesque velit sit amet pellentesque" offertype-refid="stage" reference="OFFRE7" description="Sed non nulla risus. Maecenas diam massa, volutpat ac porta ut, aliquet eu purus. Duis pharetra nunc eu odio tristique quis lacinia libero sollicitudin. Sed vitae venenatis massa. Aenean placerat lobortis odio, id luctus tortor feugiat non. Mauris sit amet urna et elit interdum varius."
+				publicationstatus="ACTIVE" location="Strasbourg" background="am id nulla purus, vulputate euismod felis."
+				profile="Curabitur tristique mattis rhoncus." candidacyForm-refid="sform" />
+		</linkedtopic>
+	</rootfolder>
+</script>

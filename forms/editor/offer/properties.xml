@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+	<section labeli18n="modules.joboffer.bo.doceditor.fieldsgroup.Offer-definition">
+		<field name="label" hidehelp="true" />
+		<field name="reference" hidehelp="true" />
+		<field name="offertype" hidehelp="true" />
+		<field name="description" hidehelp="true" />
+		<field name="location" hidehelp="true" />
+		<field name="background" hidehelp="true" />
+		<field name="profile" hidehelp="true" />
+	</section>	
+	<section labeli18n="modules.joboffer.bo.doceditor.fieldsgroup.Offer-management">
+		<field name="candidacyForm" relatedmodule="form" allow="modules_joboffer_candidacysimpleform,modules_joboffer_candidacyinquiryform" />
+		<field name="startpublicationdate" />
+		<field name="endpublicationdate" />
+	</section>
+</panel>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action name="createOffer">
+		<parameter name="listWidget" />
+		<body><![CDATA[this.createDocumentEditor('modules_joboffer_offer', listWidget.getSelectedItems()[0].id);]]></body>
+	</action>
+	<action name="initDefaultStruct">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			try
+			{
+				var documentId = listWidget.getSelectedItems()[0].id;
+				var lang = this.getContextLang();
+				var callback = function (pageTemplateName) {
+					return wCore.executeJSON('website', 'InitializeStructure', { cmpref: documentId, moduleName: 'joboffer', scriptName: 'topicDefaultStructure', pageTemplateName: pageTemplateName, lang: lang}, null, true);
+				};
+				getController().openModalDialog(this, 'InitializeStructure', {documentId: documentId, module: this, callback: callback });
+			}
+			catch (e)
+			{
+				wCore.error('blog.initDefaultStruct', [], e);
+			}
+		]]></body>
+	</action>
+</actions>

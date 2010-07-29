@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="offer-list">
+		<locale lang="fr">liste des offres d'emploi</locale>
+	</entity>
+	<entity id="offer-detail">
+		<locale lang="fr">détail d'une offre d'emploi</locale>
+	</entity>
+	<entity id="candidacy-form">
+		<locale lang="fr">formulaire de candidature</locale>
+	</entity>
+	<entity id="spontaneous-candidacy">
+		<locale lang="fr">candidature spontanée</locale>
+	</entity>
+</localization>

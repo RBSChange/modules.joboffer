@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blocks>
+	<block type="modules_joboffer_offerList" icon="list-block" label="&amp;modules.joboffer.bo.blocks.offerList.Title;">
+		<parameters>
+			<parameter name="container" type="modules_website/topic" allow="[modules_website_topic]" />
+			<parameter name="order" type="String" min-occurs="1" default-value="manual" fieldtype="dropdownlist" hidehelp="true">
+				<fieldlistitem value="manual" labeli18n="modules.joboffer.bo.general.Manual" />
+				<fieldlistitem value="alpha" labeli18n="modules.joboffer.bo.general.Alphanumeric" />
+			</parameter>
+			<parameter name="nbItemsPerPage" type="Integer" min-occurs="1" default-value="10" hidehelp="true">
+				<constraints>min:1</constraints>
+			</parameter>
+		</parameters>
+	</block>
+	<block type="modules_joboffer_offer" icon="joboffer" label="&amp;modules.joboffer.bo.blocks.offer.Title;" />
+	<block type="modules_joboffer_candidacy" icon="form" label="&amp;modules.joboffer.bo.blocks.candidacy.Title;" />
+	<block type="modules_joboffer_spontaneousCandidacy" icon="form" label="&amp;modules.joboffer.bo.blocks.spontaneouscandidacy.Title;" />
+</blocks>

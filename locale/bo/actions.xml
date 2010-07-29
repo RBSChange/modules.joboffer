@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+	<entity id="create_">
+		<locale lang="fr">créer</locale>
+		<locale lang="en">create</locale>
+		<locale lang="de">neu</locale>
+	</entity>
+	<entity id="create-offer">
+		<locale lang="fr">créer une offre d'emploi</locale>
+		<locale lang="en">create a job offer</locale>
+	</entity>
+	<entity id="create-candidacysimpleform">
+		<locale lang="fr">créer un formulaire de candidature simple</locale>
+		<locale lang="en">create a simple candidacy form</locale>
+	</entity>
+	<entity id="create-candidacyinquiryform">
+		<locale lang="fr">créer un formulaire de candidature avec workflow</locale>
+		<locale lang="en">create a candidacy form with workflow</locale>
+	</entity>
+	<entity id="invalid-topic">
+		<locale lang="fr">Rubrique non valide.</locale>
+		<locale lang="en">Invalid topic.</locale>
+	</entity>
+	<entity id="topic-already-contains-pages">
+		<locale lang="fr">Cette rubrique contient déjà des pages.</locale>
+		<locale lang="en">This topic already contains pages.</locale>
+	</entity>
+</localization>

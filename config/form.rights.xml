@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rights>
+	<actions>
+		<document name="candidacysimpleform">
+			<action name="ArchiveResponse" />
+			<action name="Export" />
+			<action name="PreviewForm" />
+		</document>
+		<document name="candidacyinquiryform" />
+	</actions>
+</rights>

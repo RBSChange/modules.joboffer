@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action name="createCandidacysimpleform">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			this.createDocumentEditor('modules_joboffer_candidacysimpleform', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+	<action name="createCandidacyinquiryform">
+		<parameter name="listWidget" />
+		<body><![CDATA[
+			this.createDocumentEditor('modules_joboffer_candidacyinquiryform', listWidget.getSelectedItems()[0].id);
+		]]></body>
+	</action>
+</actions>

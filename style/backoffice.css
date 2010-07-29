@@ -1,0 +1,15 @@
+treechildren::-moz-tree-image(modules_joboffer_offer){
+	list-style-image: url(/changeicons/small/joboffer.png);
+}
+treechildren::-moz-tree-image(modules_joboffer_candidacy){
+	list-style-image: url(/changeicons/small/candidacy.png);
+}
+treechildren::-moz-tree-image(modules_joboffer_candidacysimpleform){
+	list-style-image: url(/changeicons/small/candidacy-form.png);
+}
+treechildren::-moz-tree-image(modules_joboffer_candidacyinquiryform){
+	list-style-image: url(/changeicons/small/candidacy-inquiry-form.png);
+}
+treechildren::-moz-tree-image(modules_joboffer_spontaneous){
+	list-style-image: url(/changeicons/small/joboffer.png);
+}

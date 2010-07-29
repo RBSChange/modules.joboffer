@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<panels>
+	<panel name="resume" />
+	<panel name="properties" />
+	<xul>
+		<javascript>
+			<constructor><![CDATA[
+				this.addTab('candidacies', '&modules.joboffer.bo.doceditor.tab.Candidacies;', 'joboffer');
+			]]></constructor>
+		</javascript>
+	</xul>
+</panels>

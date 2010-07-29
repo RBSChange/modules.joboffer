@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="document-name">
+		<locale lang="fr">offre d'emploi</locale>
+		<locale lang="en">job offer</locale>
+	</entity>
+	<entity id="label">
+		<locale lang="fr">libellé</locale>
+	</entity>
+	<entity id="reference">
+		<locale lang="fr">référence</locale>
+	</entity>
+	<entity id="offertype">
+		<locale lang="fr">type d'offre</locale>
+	</entity>
+	<entity id="description">
+		<locale lang="fr">description</locale>
+	</entity>
+	<entity id="location">
+		<locale lang="fr">localisation</locale>
+	</entity>
+	<entity id="background">
+		<locale lang="fr">expérience</locale>
+	</entity>
+	<entity id="profile">
+		<locale lang="fr">profil</locale>
+	</entity>
+	<entity id="candidacyform">
+		<locale lang="fr">formulaire de candidature</locale>
+	</entity>
+	<entity id="candidacyform-help">
+		<locale lang="fr">Sélectionnez un formulaire de demande si vous souhaitez gérer les candidature via le module demande (avec workflow), sinon, sélectionnez un formulaire standard.</locale>
+	</entity>
+	<entity id="startpublicationdate">
+		<locale lang="fr">début de publication</locale>
+	</entity>
+	<entity id="startpublicationdate-help">
+		<locale lang="fr">À partir de cette date, le document sera publié. Si le champ est vide, la publication du document commencera dès maintenant.</locale>
+	</entity>
+	<entity id="endpublicationdate">
+		<locale lang="fr">fin de publication</locale>
+	</entity>
+	<entity id="endpublicationdate-help">
+		<locale lang="fr">À partir de cette date, le document ne sera plus publié. Si le champ est vide, le document restera indéfiniment publié.</locale>
+	</entity>
+	<entity id="publication.no-published-form">
+		<locale lang="fr">une offre d'emploi doit être associée à un formulaire de candidature publié pour être publiable</locale>
+	</entity>
+</localization>

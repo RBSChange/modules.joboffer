@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<localization>
+	<entity id="view-list">
+		<locale lang="fr">voir la liste des offres</locale>
+	</entity>
+	<entity id="deposit-limit">
+		<locale lang="fr">date limite de candidature</locale>
+	</entity>
+	<entity id="location">
+		<locale lang="fr">localisation</locale>
+	</entity>
+	<entity id="background">
+		<locale lang="fr">expérience requise</locale>
+	</entity>
+	<entity id="profile">
+		<locale lang="fr">profil</locale>
+	</entity>
+	<entity id="submit-candidacy-for-this-offer">
+		<locale lang="fr">postuler à cette offre</locale>
+	</entity>
+	<entity id="submit-candidacy">
+		<locale lang="fr">postuler</locale>
+	</entity>
+	<entity id="offer">
+		<locale lang="fr">offre</locale>
+	</entity>
+	<entity id="reference">
+		<locale lang="fr">référence</locale>
+	</entity>
+	<entity id="spontaneous-candidacy">
+		<locale lang="fr">candidature spontanée</locale>
+	</entity>
+	<entity id="empty-container">
+		<locale lang="fr">Il n'y a actuellement aucune offre d'emploi dans cette rubrique.</locale>
+	</entity>
+</localization>

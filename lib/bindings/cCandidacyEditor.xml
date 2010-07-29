@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl" xmlns:xbl="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<binding id="cCandidaciesPanel" extends="layout.cDocumentEditor#cDocumentEditorPanelProperties">
+		<implementation>
+			<constructor><![CDATA[
+				this.extendMethod('fireInitializeComplete', this.fireInitializeCompleteExtended);
+			]]></constructor>
+
+			<field name="mFieldNames">['candidaciesJSON']</field>
+			<field name="mPageSize">20</field>
+			<field name="mStartIndex">0</field>
+			<field name="mDocumentTotal">0</field>
+			<field name="mRowCount">0</field>
+
+			<method name="getInitializeParameters">
+				<body><![CDATA[
+					return {
+						action: 'LoadCandidacies',
+						cmpref: this.documentEditor.documentid, 
+						lang : this.documentEditor.documentInfos.vo,
+						pageSize : this.mPageSize,
+						startIndex : this.mStartIndex
+					};
+				]]></body>
+			</method>
+
+			<method name="fireInitializeCompleteExtended">
+				<parameter name="result" />
+				<body><![CDATA[
+					var contents = result.contents;
+					this.mStartIndex = contents.startIndex;
+					this.mDocumentTotal = contents.count;
+					this.mRowCount = contents.candidacies.length;
+					this.getElementByAnonId('paginator').updateNavigation(this);
+				]]></body>
+			</method>
+
+			<method name="navigate">
+				<parameter name="startIndex" />
+				<body><![CDATA[
+					this.mStartIndex = startIndex;
+					var me = this;
+					wCore.executeJSON('joboffer', 'LoadCandidacies', this.getInitializeParameters(), function (result) { me.fireInitializeComplete(result); }, true);
+				]]></body>
+			</method>
+		</implementation>
+		<content>
+			<xul:vbox flex="1">
+				<xul:cmessageinfo anonid="message" />
+				<xul:scrollbox anonid="scrollctrl" flex="1" class="editordatacontainer" orient="vertical">
+					<xul:hbox class="change-toolbox">
+						<xul:spacer flex="1" />
+						<xul:cpaginator anonid="paginator" hideseparator="true" />
+						<xul:spacer flex="1" />
+					</xul:hbox>
+					<xul:cfield name="candidaciesJSON" id="joboffer_offer_candidaciesJSON" anonid="field_candidaciesJSON" fieldtype="namedgridlist" flex="1" />
+					<xul:spacer flex="1" />
+				</xul:scrollbox>
+			</xul:vbox>
+		</content>
+	</binding>
+
+	<binding id="cCandidaciesGrid" extends="widgets.cGrid#cAbstractGrid">
+		<implementation>
+			<constructor><![CDATA[
+				this.fireEvent('gridInitialised');
+			]]></constructor>
+
+			<method name="getDocumentEditor">
+				<parameter name="datarow" />
+				<body><![CDATA[
+					var pn = this.parentNode;
+					while (pn && pn.localName != 'cdocumenteditor')
+					{
+						pn = pn.parentNode;
+					}
+					return pn;
+				]]></body>
+			</method>
+
+			<method name="execute_edit">
+				<parameter name="rowNode" />
+				<parameter name="rowData" />
+				<body><![CDATA[
+					if (this.disabled) {return;}		
+					var uri = [rowData.editorModule, 'openDocument', rowData.editorModel, rowData.responseId].join(',');
+					var fromuri = ['joboffer', 'openDocument', rowData.offerEditorModel, rowData.offerId, 'candidacies'].join(',');
+					openActionUri(uri, fromuri);
+				]]></body>
+			</method>
+		</implementation>
+		<content>
+			<xul:grid flex="1" anonid="grid" xbl:inherits="disabled" style="padding-left: 5px;padding-right: 5px;">
+				<xul:columns>
+					<xul:column flex="1" />
+					<xul:column flex="1" />
+					<xul:column flex="1" />
+					<xul:column />
+				</xul:columns>
+				<xul:rows>
+					<xul:row class="head" anonid="head-row">
+						<xul:label name="date" value="&amp;modules.joboffer.bo.doceditor.candidacies.Date-column;" />
+						<xul:label name="firstname" value="&amp;modules.joboffer.bo.doceditor.candidacies.Firstname-column;" />
+						<xul:label name="lastname" value="&amp;modules.joboffer.bo.doceditor.candidacies.Lastname-column;" />
+						<xul:label name="actionrow" value="&amp;modules.joboffer.bo.doceditor.candidacies.Actions-column;" />
+					</xul:row>
+				</xul:rows>
+			</xul:grid>
+			<xul:row anonid="template-row" class="document orderable" hidden="true">
+				<xul:label value="" />
+				<xul:label value="" />
+				<xul:label value="" />
+				<xul:toolbar class="actions">
+					<xul:toolbarbutton action="edit" image="{IconsBase}/small/edit.png" tooltiptext="&amp;modules.uixul.bo.actions.Edit;" />
+				</xul:toolbar>
+			</xul:row>
+		</content>
+	</binding>
+</bindings>

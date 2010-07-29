@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <binding fileName="modules/useractionlogger/persistentdocument/import/useractionlogger_binding.xml"/>
+  <actiondef modulename="joboffer" actionname="update.rootfolder" label="modules.joboffer.bo.useractionlogger.update-rootfolder"/>
+  <actiondef modulename="joboffer" actionname="insert.offer" label="modules.joboffer.bo.useractionlogger.insert-offer"/>
+  <actiondef modulename="joboffer" actionname="activate.offer" label="modules.joboffer.bo.useractionlogger.activate-offer"/>
+  <actiondef modulename="joboffer" actionname="update.offer" label="modules.joboffer.bo.useractionlogger.update-offer"/>
+  <actiondef modulename="joboffer" actionname="delete.offer" label="modules.joboffer.bo.useractionlogger.delete-offer"/>
+  <actiondef modulename="joboffer" actionname="deactivated.offer" label="modules.joboffer.bo.useractionlogger.deactivated-offer"/>
+  <actiondef modulename="joboffer" actionname="reactivate.offer" label="modules.joboffer.bo.useractionlogger.reactivate-offer"/>
+  <actiondef modulename="joboffer" actionname="activate.spontaneous" label="modules.joboffer.bo.useractionlogger.activate-spontaneous"/>
+  <actiondef modulename="joboffer" actionname="update.spontaneous" label="modules.joboffer.bo.useractionlogger.update-spontaneous"/>
+  <actiondef modulename="joboffer" actionname="deactivated.spontaneous" label="modules.joboffer.bo.useractionlogger.deactivated-spontaneous"/>
+  <actiondef modulename="joboffer" actionname="reactivate.spontaneous" label="modules.joboffer.bo.useractionlogger.reactivate-spontaneous"/>
+  <actiondef modulename="joboffer" actionname="move.spontaneous" label="modules.joboffer.bo.useractionlogger.move-spontaneous"/>
+</script>

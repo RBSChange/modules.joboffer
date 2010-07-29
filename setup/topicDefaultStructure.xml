@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
+	<binding fileName="modules/form/persistentdocument/import/form_binding.xml" />
+	<binding fileName="modules/inquiry/persistentdocument/import/inquiry_binding.xml" />
+	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
+	<binding fileName="modules/joboffer/persistentdocument/import/joboffer_binding.xml" />
+
+	<topic template="webfactory/tplTwo">
+		<page byLabel="Offres d'emploi" isIndexPage="true" indexingstatus="false" navigationVisibility="hidden">
+			<tag name="functional_joboffer_offer-list" />
+			<changecontent for="content-block">
+				<changeblock type="modules_joboffer_offerList" __nbItemsPerPage="5" />
+			</changecontent>
+		</page>			
+		<page byLabel="Détail d'une offre d'emploi" isIndexPage="false" indexingstatus="false" navigationVisibility="hidden">
+			<tag name="functional_joboffer_offer-detail" />
+			<changecontent for="content-block">
+				<changeblock type="modules_joboffer_offer" />
+			</changecontent>
+		</page>
+		<page byLabel="Postuler" isIndexPage="false" indexingstatus="false" navigationVisibility="hidden">
+			<tag name="functional_joboffer_candidacy-form" />
+			<changecontent for="content-block">
+				<changeblock type="modules_joboffer_candidacy" />
+				<changeblock type="modules_form_form" />
+				<changeblock type="modules_inquiry_inquiryform" />
+			</changecontent>
+		</page>
+		<page byLabel="Candidature spontanée" isIndexPage="false" indexingstatus="false" navigationVisibility="hidden">
+			<tag name="functional_joboffer_spontaneous-candidacy" />
+			<changecontent for="content-block">
+				<changeblock type="modules_joboffer_spontaneousCandidacy" />
+				<changeblock type="modules_form_form" />
+				<changeblock type="modules_inquiry_inquiryform" />
+			</changecontent>
+		</page>
+	</topic>
+</script>

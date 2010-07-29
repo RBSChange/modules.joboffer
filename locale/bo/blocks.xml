@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+	<entity id="offerlist.title">
+		<locale lang="fr">liste des offres d'emploi</locale>
+	</entity>
+	<entity id="offerlist.container">
+		<locale lang="fr">conteneur</locale>
+	</entity>
+	<entity id="offerlist.container-help">
+		<locale lang="fr">Conteneur des offres d'emploi à afficher. Laisser vide pour afficher la liste contextuelle des offres.</locale>
+	</entity>
+	<entity id="offerlist.order">
+		<locale lang="fr">tri</locale>
+	</entity>
+	<entity id="offerlist.nbitemsperpage">
+		<locale lang="fr">nombre d'éléments par page</locale>
+	</entity>
+	<entity id="offer.title">
+		<locale lang="fr">détail d'une offre d'emploi</locale>
+	</entity>
+	<entity id="candidacy.title">
+		<locale lang="fr">formulaire de candidature</locale>
+		<locale lang="en">candidacy form</locale>
+	</entity>
+	<entity id="spontaneouscandidacy.title">
+		<locale lang="fr">formulaire de candidature spontanée</locale>
+		<locale lang="en">spontaneous candidacy form</locale>
+	</entity>
+</localization>
