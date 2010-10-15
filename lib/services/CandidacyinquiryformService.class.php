@@ -91,7 +91,10 @@ class joboffer_CandidacyinquiryformService extends inquiry_InquiryformService
 	 */
 	protected function postInsert($document, $parentNodeId = null)
 	{
-		joboffer_ModuleService::getInstance()->generateRequiredFields($document->getId());
+		if (!$document->getIsDuplicating())
+		{
+			joboffer_ModuleService::getInstance()->generateRequiredFields($document->getId());
+		}
 		
 		parent::postInsert($document, $parentNodeId);
 	}
