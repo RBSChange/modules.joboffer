@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <script>
-	<binding fileName="modules/list/persistentdocument/import/list_binding.xml" />
-	<binding fileName="modules/form/persistentdocument/import/form_binding.xml" />
-	<binding fileName="modules/inquiry/persistentdocument/import/inquiry_binding.xml" />
 	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
-	<binding fileName="modules/joboffer/persistentdocument/import/joboffer_binding.xml" />
 
-	<topic template="webfactory/tplTwo">
+	<attribute name="template" default="true">webfactory/tplTwo</attribute>
+	
+	<topic byDocumentId-attr="">
 		<page byLabel="Offres d'emploi" isIndexPage="true" indexingstatus="false" navigationVisibility="hidden">
 			<tag name="functional_joboffer_offer-list" />
 			<changecontent for="content-block">

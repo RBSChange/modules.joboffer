@@ -74,33 +74,27 @@ class joboffer_ModuleService extends ModuleBaseService
 	
 	/**
 	 * @param f_peristentdocument_PersistentDocument $container
-	 * @param string $pageTemplate
+	 * @param array $attributes
 	 * @param string $script
-	 * @param DOMDocument $scriptPath
+	 * @return array
 	 */
-	public function updateStructureInitializationScript($container, $pageTemplate, $script, $scriptDom)
+	public function getStructureInitializationAttributes($container, $attributes, $script)
 	{
 		// Check container.
 		if (!$container instanceof website_persistentdocument_topic)
 		{
 			throw new BaseException('Invalid topic', 'modules.joboffer.bo.actions.Invalid-topic');
 		}
-		else
+		
+		$node = TreeService::getInstance()->getInstanceByDocument($container);
+		if (count($node->getChildren('modules_website/page')) > 0)
 		{
-			$node = TreeService::getInstance()->getInstanceByDocument($container);
-			if (count($node->getChildren('modules_website/page')) > 0)
-			{
-				throw new BaseException('This topic already contains pages', 'modules.joboffer.bo.actions.Topic-already-contains-pages');
-			}
+			throw new BaseException('This topic already contains pages', 'modules.joboffer.bo.actions.Topic-already-contains-pages');
 		}
 		
-		// Fix script content.
-		$xmlWebsite = $scriptDom->getElementsByTagName('systemtopic')->item(0);
-		if (!$xmlWebsite)
-		{
-			$xmlWebsite = $scriptDom->getElementsByTagName('topic')->item(0);
-		}
-		$xmlWebsite->setAttribute('documentid', $container->getId());
+		// Set atrtibutes.
+		$attributes['byDocumentId'] = $container->getId();
+		return $attributes;
 	}
 	
 	/**
