@@ -24,7 +24,7 @@ class joboffer_BlockOfferListAction extends website_BlockAction
 		if (count($items) > 0)
 		{
 			$nbItemPerPage = $configuration->getNbItemsPerPage();
-			$paginator = new paginator_Paginator('joboffer', $request->getParameter(paginator_Paginator::REQUEST_PARAMETER_NAME, 1), $items, $nbItemPerPage);
+			$paginator = new paginator_Paginator('joboffer', $request->getParameter(paginator_Paginator::PAGEINDEX_PARAMETER_NAME, 1), $items, $nbItemPerPage);
 			$request->setAttribute('paginator', $paginator);
 		}
 		
