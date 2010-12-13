@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.doceditor.property" lcid="fr_FR">
+  <key id="reference">référence</key>
+  <key id="candidacy-form">formulaire de candidature</key>
+</i18n>

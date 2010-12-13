@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.document.offer.publication" lcid="fr_FR">
+  <key id="no-published-form">une offre d'emploi doit être associée à un formulaire de candidature publié pour être publiable</key>
+</i18n>

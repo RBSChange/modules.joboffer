@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<localization extend="modules.form.document.form">
-	<entity id="document-name">
-		<locale lang="fr">formulaire de candidature simple</locale>
-		<locale lang="en">simple candidacy form</locale>
-	</entity>
-</localization>

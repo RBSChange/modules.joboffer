@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<localization>
-	<entity id="document-name">
-		<locale lang="fr">candidature</locale>
-		<locale lang="en">candidacy</locale>
-	</entity>
-</localization>

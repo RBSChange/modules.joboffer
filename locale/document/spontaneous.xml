@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<localization extend="modules.joboffer.document.offer">
-	<entity id="document-name">
-		<locale lang="fr">candidatures spontanées</locale>
-		<locale lang="en">spontaneous candidacies</locale>
-	</entity>
-</localization>

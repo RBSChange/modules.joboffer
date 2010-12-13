@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<localization extend="modules.inquiry.document.inquiryform">
-	<entity id="document-name">
-		<locale lang="fr">formulaire de candidature avec workflow</locale>
-		<locale lang="en">candidacy form with workflow</locale>
-	</entity>
-</localization>

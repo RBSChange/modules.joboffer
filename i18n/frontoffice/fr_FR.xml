@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.frontoffice" lcid="fr_FR">
+  <key id="view-list">voir la liste des offres</key>
+  <key id="deposit-limit">date limite de candidature</key>
+  <key id="location">localisation</key>
+  <key id="background">expérience requise</key>
+  <key id="profile">profil</key>
+  <key id="submit-candidacy-for-this-offer">postuler à cette offre</key>
+  <key id="submit-candidacy">postuler</key>
+  <key id="offer">offre</key>
+  <key id="reference">référence</key>
+  <key id="spontaneous-candidacy">candidature spontanée</key>
+  <key id="empty-container">Il n'y a actuellement aucune offre d'emploi dans cette rubrique.</key>
+</i18n>

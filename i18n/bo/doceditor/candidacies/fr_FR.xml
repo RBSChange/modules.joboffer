@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.doceditor.candidacies" lcid="fr_FR">
+  <key id="date-column">date</key>
+  <key id="firstname-column">prénom</key>
+  <key id="lastname-column">nom</key>
+  <key id="actions-column">actions</key>
+</i18n>

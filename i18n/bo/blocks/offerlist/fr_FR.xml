@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.blocks.offerlist" lcid="fr_FR">
+  <key id="title">liste des offres d'emploi</key>
+  <key id="container">conteneur</key>
+  <key id="container-help">Conteneur des offres d'emploi à afficher. Laisser vide pour afficher la liste contextuelle des offres.</key>
+  <key id="order">tri</key>
+  <key id="nbitemsperpage">nombre d'éléments par page</key>
+</i18n>

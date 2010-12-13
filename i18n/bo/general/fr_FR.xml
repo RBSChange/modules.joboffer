@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.general" lcid="fr_FR">
+  <key id="module-name">offres d'emploi</key>
+  <key id="tree-root-name">offres d'emploi</key>
+  <key id="system-folder-name">offres d'emploi</key>
+  <key id="alphanumeric">alphanumérique</key>
+  <key id="manual">manuel</key>
+  <key id="default-offerid-label">identifiant de l'offre</key>
+  <key id="default-offerref-label">référence de l'offre</key>
+  <key id="default-offerlabel-label">libelé de l'offre</key>
+  <key id="default-firstname-label">prénom</key>
+  <key id="default-lastname-label">nom</key>
+</i18n>

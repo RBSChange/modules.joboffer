@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.useractionlogger" lcid="fr_FR">
+  <key id="update-rootfolder">update.rootfolder {documentlabel}</key>
+  <key id="log-update-rootfolder">log-update-rootfolder</key>
+  <key id="insert-offer">insert.offer {lang} {documentlabel}</key>
+  <key id="log-insert-offer">log-insert-offer</key>
+  <key id="activate-offer">activate.offer {lang} {documentlabel}</key>
+  <key id="log-activate-offer">log-activate-offer</key>
+  <key id="update-offer">update.offer {lang} {documentlabel}</key>
+  <key id="log-update-offer">log-update-offer</key>
+  <key id="delete-offer">delete.offer {documentlabel} {lang}</key>
+  <key id="log-delete-offer">log-delete-offer</key>
+  <key id="deactivated-offer">deactivated.offer {lang} {documentlabel}</key>
+  <key id="log-deactivated-offer">log-deactivated-offer</key>
+  <key id="reactivate-offer">reactivate.offer {lang} {documentlabel}</key>
+  <key id="log-reactivate-offer">log-reactivate-offer</key>
+  <key id="activate-spontaneous">activate.spontaneous {lang} {documentlabel}</key>
+  <key id="log-activate-spontaneous">log-activate-spontaneous</key>
+  <key id="update-spontaneous">update.spontaneous {lang} {documentlabel}</key>
+  <key id="log-update-spontaneous">log-update-spontaneous</key>
+  <key id="deactivated-spontaneous">deactivated.spontaneous {lang} {documentlabel}</key>
+  <key id="log-deactivated-spontaneous">log-deactivated-spontaneous</key>
+  <key id="reactivate-spontaneous">reactivate.spontaneous {lang} {documentlabel}</key>
+  <key id="log-reactivate-spontaneous">log-reactivate-spontaneous</key>
+  <key id="move-spontaneous">move.spontaneous {destinationlabel} {lang} {documentlabel}</key>
+  <key id="log-move-spontaneous">log-move-spontaneous</key>
+</i18n>

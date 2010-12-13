@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.actions" lcid="fr_FR">
+  <key id="create_">créer</key>
+  <key id="create-offer">créer une offre d'emploi</key>
+  <key id="create-candidacysimpleform">créer un formulaire de candidature simple</key>
+  <key id="create-candidacyinquiryform">créer un formulaire de candidature avec workflow</key>
+  <key id="invalid-topic">Rubrique non valide.</key>
+  <key id="topic-already-contains-pages">Cette rubrique contient déjà des pages.</key>
+</i18n>

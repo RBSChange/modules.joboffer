@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.tags" lcid="fr_FR">
+  <key id="offer-list">liste des offres d'emploi</key>
+  <key id="offer-detail">détail d'une offre d'emploi</key>
+  <key id="candidacy-form">formulaire de candidature</key>
+  <key id="spontaneous-candidacy">candidature spontanée</key>
+</i18n>

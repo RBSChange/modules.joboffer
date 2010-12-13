@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.document.offer" lcid="fr_FR">
+  <key id="document-name">offre d'emploi</key>
+  <key id="label">libellé</key>
+  <key id="reference">référence</key>
+  <key id="offertype">type d'offre</key>
+  <key id="description">description</key>
+  <key id="location">localisation</key>
+  <key id="background">expérience</key>
+  <key id="profile">profil</key>
+  <key id="candidacyform">formulaire de candidature</key>
+  <key id="candidacyform-help">Sélectionnez un formulaire de demande si vous souhaitez gérer les candidature via le module demande (avec workflow), sinon, sélectionnez un formulaire standard.</key>
+  <key id="startpublicationdate">début de publication</key>
+  <key id="startpublicationdate-help">À partir de cette date, le document sera publié. Si le champ est vide, la publication du document commencera dès maintenant.</key>
+  <key id="endpublicationdate">fin de publication</key>
+  <key id="endpublicationdate-help">À partir de cette date, le document ne sera plus publié. Si le champ est vide, le document restera indéfiniment publié.</key>
+</i18n>
