@@ -8,9 +8,9 @@
 
 	<systemfolder module="list" relatedmodule="job">
 		<editablelist listid="modules_joboffer/offertype" label="Type d'offre d'emploi" description="Liste des types des différentes offres d'emploi pour le module job">	
-			<item label="CDI" id="cdi" />
-			<item label="CDD" />
-			<item label="Stage" />
+			<item byLabel="CDI" id="cdi" />
+			<item byLabel="CDD" />
+			<item byLabel="Stage" />
 		</editablelist>
 		
 		<dynamiclist byListid="modules_zone/publishedcountries" id="l_countries" />
