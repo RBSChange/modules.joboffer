@@ -83,4 +83,19 @@ class joboffer_CandidacysimpleformService extends form_FormService
 		
 		return $result;
 	}
+	
+	/**
+	 * @param joboffer_persistentdocument_candidacyinquiryform $document
+	 * @param Integer $parentNodeId Parent node ID where to save the document.
+	 * @return void
+	 */
+	protected function postInsert($document, $parentNodeId = null)
+	{
+		if (!$document->getIsDuplicating())
+		{
+			joboffer_ModuleService::getInstance()->generateRequiredFields($document->getId());
+		}
+		
+		parent::postInsert($document, $parentNodeId);
+	}
 }
