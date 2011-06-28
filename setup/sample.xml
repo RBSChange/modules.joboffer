@@ -5,8 +5,6 @@
 	<binding fileName="modules/inquiry/persistentdocument/import/inquiry_binding.xml" />
 	<binding fileName="modules/website/persistentdocument/import/website_binding.xml" />
 	<binding fileName="modules/joboffer/persistentdocument/import/joboffer_binding.xml" />
-
-	<attribute name="template" default="true">webfactory/tplTwo</attribute>
 	
 	<website byTag="default_modules_website_default-website">
 		<topic byLabel="Offres d'emploi" id="topic">
