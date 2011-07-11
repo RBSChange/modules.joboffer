@@ -6,7 +6,7 @@
 	<binding fileName="modules/notification/persistentdocument/import/notification_binding.xml" />
 	<binding fileName="modules/joboffer/persistentdocument/import/joboffer_binding.xml" />
 
-	<systemfolder module="list" relatedmodule="job">
+	<systemfolder module="list" relatedmodule="joboffer">
 		<editablelist listid="modules_joboffer/offertype" label="Type d'offre d'emploi" description="Liste des types des différentes offres d'emploi pour le module job">	
 			<item byLabel="CDI" id="cdi" />
 			<item byLabel="CDD" />
@@ -20,18 +20,18 @@
 		<spontaneous label="Candidatures spontanées" offertype-refid="cdi" description="-" location="-" background="-" profile="-" />
 	</rootfolder>
 				
-	<systemfolder module="notification" relatedmodule="faq">
-		<notification codename="modules_faq/messageFromAuthor" id="n1" label="Message envoyé par le candidat"
+	<systemfolder module="notification" relatedmodule="joboffer">
+		<notification codename="modules_joboffer/messageFromAuthor" id="n1" label="Message envoyé par le candidat"
 			subject="Message de l'auteur de la candidature numéro {inquiryId}"
 			header="&lt;strong&gt;Message à propos de la {inquiryLink}.&lt;/strong&gt;" body="&lt;p&gt;{messageContents}&lt;/p&gt;"
 			availableparameters="{inquiryId}, {inquiryLabel}, {inquiryUrl}, {inquiryLink}, {inquiryCreationdate}, {messageContents}" />
 
-		<notification codename="modules_faq/messageFromReceiver" id="n2" label="Message envoyé à un candidat"
+		<notification codename="modules_joboffer/messageFromReceiver" id="n2" label="Message envoyé à un candidat"
 			subject="Message d'un destinataire de la candidature numéro {inquiryId}"
 			header="&lt;strong&gt;Message à propos de la {inquiryLink}.&lt;/strong&gt;" body="&lt;p&gt;{messageContents}&lt;/p&gt;"
 			availableparameters="{inquiryId}, {inquiryLabel}, {inquiryUrl}, {inquiryLink}, {inquiryCreationdate}, {messageContents}" />
 
-		<notification codename="modules_faq/closeInquiry" id="n3" label="Clôture de la candidature"
+		<notification codename="modules_joboffer/closeInquiry" id="n3" label="Clôture de la candidature"
 			subject="Clôture de la candidature numéro {inquiryId}"
 			body="&lt;strong&gt;La {inquiryLink} vient d'être clôturée.&lt;/strong&gt;"
 			availableparameters="{inquiryId}, {inquiryLabel}, {inquiryUrl}, {inquiryLink}, {inquiryCreationdate}" />
