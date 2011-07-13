@@ -29,6 +29,6 @@ class joboffer_Setup extends object_InitDataSetup
 		// this file depend on the data of other packages.
 		// Example:
 		// return array('modules_website', 'modules_users');
-		return array();
+		return array('modules_zone');
 	}
 }
