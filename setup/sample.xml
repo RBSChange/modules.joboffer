@@ -11,7 +11,7 @@
 	<website byTag="default_modules_website_default-website">
 		<topic byLabel="Offres d'emploi" id="topic">
 			<execute method="setDocumentIdAttribute" />
-			<binding fileName="modules/brand/setup/globalDefaultStructure.xml" />
+			<binding fileName="modules/joboffer/setup/topicDefaultStructure.xml" />
 		</topic>
 	</website>
 
