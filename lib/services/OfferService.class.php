@@ -91,13 +91,12 @@ class joboffer_OfferService extends f_persistentdocument_DocumentService
 		}
 		
 		$query = joboffer_CandidacyService::getInstance()->createQuery()->add(Restrictions::eq('offer', $offer))->addOrder(Order::desc('document_creationdate'))->setFirstResult($startIndex)->setMaxResults($pageSize);
-		$dateTimeFormat = f_Locale::translateUI('&modules.uixul.bo.datePicker.calendar.dataWriterTimeFormat;');
 		foreach ($query->find() as $candidacy)
 		{
 			$response = $candidacy->getResponse();
 			$row = array(
 				'id' => $candidacy->getId(),
-				'date' => date_DateFormat::format($candidacy->getCreationdate(), $dateTimeFormat),
+				'date' => date_Formatter::toDefaultDateTimeBO($candidacy->getCreationdate()),
 				'offerId' => $offer->getId(),
 				'offerEditorModel' => $offer->getPersistentModel()->getBackofficeName(),
 				'responseId' => $response->getId(),
