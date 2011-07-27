@@ -21,7 +21,7 @@ class joboffer_BlockSpontaneousCandidacyAction extends website_BlockAction
 		
 		try 
 		{
-			$listPage = TagService::getInstance()->getDocumentBySiblingTag('functional_joboffer_offer-list', $this->getPage()->getPersistentPage());
+			$listPage = TagService::getInstance()->getDocumentBySiblingTag('functional_joboffer_offer-list', $this->getContext()->getPersistentPage());
 			if ($listPage->isPublished())
 			{
 				$request->setAttribute('listPage', $listPage);
