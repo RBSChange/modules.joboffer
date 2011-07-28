@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <tags>
-	<tag label="&amp;modules.joboffer.bo.tags.offer-list;" icon="list-block">functional_joboffer_offer-list</tag>
-	<tag label="&amp;modules.joboffer.bo.tags.offer-detail;" icon="joboffer">functional_joboffer_offer-detail</tag>
-	<tag label="&amp;modules.joboffer.bo.tags.candidacy-form;" icon="form">functional_joboffer_candidacy-form</tag>
-	<tag label="&amp;modules.joboffer.bo.tags.spontaneous-candidacy;" icon="form">functional_joboffer_spontaneous-candidacy</tag>
+	<tag labeli18n="m.joboffer.bo.tags.offer-list" icon="list-block">functional_joboffer_offer-list</tag>
+	<tag labeli18n="m.joboffer.bo.tags.offer-detail" icon="joboffer">functional_joboffer_offer-detail</tag>
+	<tag labeli18n="m.joboffer.bo.tags.candidacy-form" icon="form">functional_joboffer_candidacy-form</tag>
+	<tag labeli18n="m.joboffer.bo.tags.spontaneous-candidacy" icon="form">functional_joboffer_spontaneous-candidacy</tag>
 </tags>
