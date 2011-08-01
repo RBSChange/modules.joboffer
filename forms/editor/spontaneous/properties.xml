@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <panel>
-	<section labeli18n="modules.joboffer.bo.doceditor.fieldsgroup.Offer-definition">
+	<section labeli18n="m.joboffer.bo.doceditor.fieldsgroup.offer-definition">
 		<field name="reference" hidehelp="true" />
 	</section>	
-	<section labeli18n="modules.joboffer.bo.doceditor.fieldsgroup.Offer-management">
+	<section labeli18n="m.joboffer.bo.doceditor.fieldsgroup.offer-management">
 		<field name="candidacyForm" relatedmodule="form" allow="modules_joboffer_candidacysimpleform,modules_joboffer_candidacyinquiryform" />
 	</section>
 </panel>

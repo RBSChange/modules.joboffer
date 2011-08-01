@@ -5,7 +5,7 @@
 	<xul>
 		<javascript>
 			<constructor><![CDATA[
-				this.addTab('candidacies', '&modules.joboffer.bo.doceditor.tab.Candidacies;', 'joboffer');
+				this.addTab('candidacies', "${transui:m.joboffer.bo.doceditor.tab.candidacies,js,ucf}", 'joboffer');
 			]]></constructor>
 		</javascript>
 	</xul>
