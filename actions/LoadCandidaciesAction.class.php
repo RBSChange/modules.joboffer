@@ -3,11 +3,11 @@
  * joboffer_LoadCandidaciesAction
  * @package modules.joboffer.actions
  */
-class joboffer_LoadCandidaciesAction extends f_action_BaseJSONAction
+class joboffer_LoadCandidaciesAction extends change_JSONAction
 {
 	/**
-	 * @param Context $context
-	 * @param Request $request
+	 * @param change_Context $context
+	 * @param change_Request $request
 	 */
 	public function _execute($context, $request)
 	{
