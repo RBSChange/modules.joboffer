@@ -48,9 +48,9 @@
 			</drops>
 			<styles properties="fieldType required isLocked conditioned" />
 			<columns>
-				<column name="fieldType" label="FieldType" flex="2" />
-				<column name="fieldRequired" label="FieldRequired" flex="1" />
-				<column name="fieldConditioned" label="FieldConditioned" flex="1" />
+				<column name="fieldType" flex="2" />
+				<column name="fieldRequired" flex="1" />
+				<column name="fieldConditioned" flex="1" />
 			</columns>
 			<contextactions>
 				<contextaction name="edit" />
@@ -103,9 +103,9 @@
 			</drops>
 			<styles properties="fieldType required isLocked conditioned" />
 			<columns>
-				<column name="fieldType" label="FieldType" flex="2" />
-				<column name="fieldRequired" label="FieldRequired" flex="1" />
-				<column name="fieldConditioned" label="FieldConditioned" flex="1" />
+				<column name="fieldType" flex="2" />
+				<column name="fieldRequired" flex="1" />
+				<column name="fieldConditioned" flex="1" />
 			</columns>
 			<contextactions>
 				<contextaction name="edit" />
@@ -129,7 +129,7 @@
 		</model>
 	</models>
 	<actions>
-		<action name="createCandidacysimpleform" single="true" permission="Insert_candidacysimpleform" icon="add" label="&amp;modules.joboffer.bo.actions.Create-candidacysimpleform;" />
-		<action name="createCandidacyinquiryform" single="true" permission="Insert_candidacyinquiryform" icon="add" label="&amp;modules.joboffer.bo.actions.Create-candidacyinquiryform;" />
+		<action name="createCandidacysimpleform" single="true" permission="Insert_candidacysimpleform" icon="add" labeli18n="m.joboffer.bo.actions.create-candidacysimpleform" />
+		<action name="createCandidacyinquiryform" single="true" permission="Insert_candidacyinquiryform" icon="add" labeli18n="m.joboffer.bo.actions.create-candidacyinquiryform" />
 	</actions>
 </perspective>
