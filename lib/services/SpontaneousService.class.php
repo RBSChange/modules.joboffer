@@ -17,7 +17,7 @@ class joboffer_SpontaneousService extends joboffer_OfferService
 	{
 		if (self::$instance === null)
 		{
-			self::$instance = self::getServiceClassInstance(get_class());
+			self::$instance = new self();
 		}
 		return self::$instance;
 	}
