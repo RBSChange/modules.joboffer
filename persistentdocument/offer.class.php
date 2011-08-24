@@ -3,34 +3,8 @@
  * Class where to put your custom methods for document joboffer_persistentdocument_offer
  * @package modules.joboffer.persistentdocument
  */
-class joboffer_persistentdocument_offer extends joboffer_persistentdocument_offerbase implements indexer_IndexableDocument
+class joboffer_persistentdocument_offer extends joboffer_persistentdocument_offerbase
 {
-	/**
-	 * @return indexer_IndexedDocument
-	 */
-	public function getIndexedDocument()
-	{
-		$indexedDoc = new indexer_IndexedDocument();
-		$indexedDoc->setId($this->getId());
-		$indexedDoc->setDocumentModel('modules_joboffer/offer');
-		$indexedDoc->setLabel($this->getLabel());
-		$indexedDoc->setLang(RequestContext::getInstance()->getLang());
-		$indexedDoc->setText($this->getFullTextForIndexation());
-		return $indexedDoc;
-	}
-	
-	/**
-	 * @return string
-	 */
-	private function getFullTextForIndexation()
-	{
-		$fullText = $this->getDescription();
-		$fullText .= ' ' . $this->getLocation();
-		$fullText .= ' ' . $this->getBackground();
-		$fullText .= ' ' . $this->getProfile();
-		return f_util_StringUtils::htmlToText($fullText);
-	}
-	
 	/**
 	 * @param integer $maxLength
 	 * @return string
