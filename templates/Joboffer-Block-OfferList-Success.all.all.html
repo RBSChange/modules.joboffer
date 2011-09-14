@@ -2,7 +2,7 @@
 	<li><a class="link" href="${spontaneousUrl}" tal:content="trans:m.joboffer.frontoffice.spontaneous-candidacy,ucf"></a></li>
 </ul>
 
-<h2 change:h="">${container/getLabelAsHtml}</h2>
+<h2 change:h="">${container/getLabel}</h2>
 <tal:block tal:condition="not:paginator">
 	<span tal:content="trans:m.joboffer.frontoffice.empty-container,ucf"></span>
 </tal:block>
@@ -10,12 +10,12 @@
 	<ol class="offers">
 		<li tal:repeat="item paginator">
 			<h3 change:h="">
-				<a change:link="document item">[${item/getOfferType/getLabelAsHtml}] ${item/getLabelAsHtml}</a>
+				<a change:link="document item">[${item/getOfferType/getLabel}] ${item/getLabel}</a>
 			</h3>
 			<small>
 				<span tal:condition="item/getStartpublicationdate" tal:replace="date:item/getStartpublicationdate,from=gmt,'d/m/Y'"></span>
 				<span tal:condition="not:item/getStartpublicationdate" tal:replace="date:item/getCreationdate,from=gmt,'d/m/Y'"></span>
-				<tal:block tal:condition="item/getReference">- ${item/getReferenceAsHtml}</tal:block>
+				<tal:block tal:condition="item/getReference">- ${item/getReference}</tal:block>
 			</small>
 			<p tal:content="item/getShortDescription" />
 		</li>

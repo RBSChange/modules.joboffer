@@ -3,23 +3,23 @@
 	<li><a class="link" tal:condition="spontaneousUrl" href="${spontaneousUrl}" tal:content="trans:m.joboffer.frontoffice.spontaneous-candidacy,ucf"></a></li>
 </ul>
 
-<h2 change:h="">[${item/getOfferType/getLabelAsHtml}] ${item/getLabelAsHtml}</h2>
+<h2 change:h="">[${structure item/getOfferType/getLabelAsHtml}] ${structure item/getLabelAsHtml}</h2>
 <small>
 	<span tal:condition="item/getStartpublicationdate" tal:replace="date:item/getStartpublicationdate,from=gmt,'d/m/Y'"></span>
 	<span tal:condition="not:item/getStartpublicationdate" tal:replace="date:item/getCreationdate,from=gmt,'d/m/Y'"></span>
-	<tal:block tal:condition="item/getReference">- ${item/getReferenceAsHtml}</tal:block>
+	<tal:block tal:condition="item/getReference">- ${structure item/getReferenceAsHtml}</tal:block>
 </small>
-<div class="offer-description">${item/getDescriptionAsHtml}</div>
+<div class="offer-description">${structure item/getDescriptionAsHtml}</div>
 <dl class="offer-infos">
 	<tal:block tal:condition="item/getEndpublicationdate" tal:omit-tag="">
 		<dt><strong tal:content="trans:m.joboffer.frontoffice.deposit-limit,ucf"></strong></dt>
 		<dd><span tal:replace="date:item/getEndpublicationdate,from=gmt,'l d M Y'"></span></dd>
 	</tal:block>
 	<dt><strong tal:content="trans:m.joboffer.frontoffice.location,ucf"></strong></dt>
-	<dd>${item/getLocationAsHtml}</dd>
+	<dd>${structure item/getLocationAsHtml}</dd>
 	<dt><strong tal:content="trans:m.joboffer.frontoffice.background,ucf"></strong></dt>
-	<dd>${item/getBackgroundAsHtml}</dd>
+	<dd>${structure item/getBackgroundAsHtml}</dd>
 	<dt><strong tal:content="trans:m.joboffer.frontoffice.profile,ucf"></strong></dt>
-	<dd>${item/getProfileAsHtml}</dd>
+	<dd>${structure item/getProfileAsHtml}</dd>
 </dl>
 <a class="link button" href="${item/getFormPageUrl}" tal:content="trans:m.joboffer.frontoffice.submit-candidacy-for-this-offer,ucf"></a>

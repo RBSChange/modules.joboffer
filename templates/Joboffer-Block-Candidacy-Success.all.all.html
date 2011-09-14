@@ -7,10 +7,10 @@
 <ul class="offer-infos">
 	<li>
 		<strong tal:content="trans:m.joboffer.frontoffice.offer,ucf,lab"></strong>
-		<a change:link="document item">${item/getLabelAsHtml}</a>
+		<a change:link="document item">${item/getLabel}</a>
 	</li>
 	<li tal:condition="item/getReference">
 		<strong tal:content="trans:m.joboffer.frontoffice.reference,ucf,lab"></strong>
-		${item/getReferenceAsHtml}
+		${item/getReference}
 	</li>
 </ul>
