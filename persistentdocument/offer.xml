@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/4.0.xsd" model-version="1.0"
-	indexable="true" icon="joboffer">
-	<properties>
-		<add name="reference" type="String" />
-		<add name="offertype" type="modules_list/item" min-occurs="1" from-list="modules_joboffer/offertype" />
-		<add name="description" type="XHTMLFragment" min-occurs="1" localized="true" indexed="description"/>
-		<add name="location" type="LongString" min-occurs="1" localized="true" />
-		<add name="background" type="LongString" min-occurs="1" localized="true" />
-		<add name="profile" type="LongString" min-occurs="1" localized="true" />
-		<add name="candidacyForm" type="modules_form/baseform" />
-	</properties>
+<document xmlns="http://www.rbs.fr/schema/change-document/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.rbs.fr/schema/change-document/1.0 http://www.rbschange.fr/static/schema/change-document/4.0.xsd" model-version="1.0" indexable="true" icon="joboffer">
+  <properties>
+    <property name="reference" type="String"/>
+    <property name="offertype" type="modules_list/item" min-occurs="1" from-list="modules_joboffer/offertype"/>
+    <property name="description" type="XHTMLFragment" min-occurs="1" localized="true" indexed="description"/>
+    <property name="location" type="LongString" min-occurs="1" localized="true"/>
+    <property name="background" type="LongString" min-occurs="1" localized="true"/>
+    <property name="profile" type="LongString" min-occurs="1" localized="true"/>
+    <property name="candidacyForm" type="modules_form/baseform"/>
+  </properties>
 </document>
