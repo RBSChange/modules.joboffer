@@ -83,7 +83,7 @@ class joboffer_ModuleService extends ModuleBaseService
 		// Check container.
 		if (!$container instanceof website_persistentdocument_topic)
 		{
-			throw new BaseException('Invalid topic', 'modules.joboffer.bo.actions.Invalid-topic');
+			throw new BaseException('Invalid topic', 'm.website.bo.actions.invalid-topic');
 		}
 		
 		$node = TreeService::getInstance()->getInstanceByDocument($container);
