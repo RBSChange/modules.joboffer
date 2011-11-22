@@ -129,7 +129,7 @@
 		</model>
 	</models>
 	<actions>
-		<action name="createCandidacysimpleform" single="true" permission="Insert_candidacysimpleform" icon="add" label="&amp;modules.joboffer.bo.actions.Create-candidacysimpleform;" />
-		<action name="createCandidacyinquiryform" single="true" permission="Insert_candidacyinquiryform" icon="add" label="&amp;modules.joboffer.bo.actions.Create-candidacyinquiryform;" />
+		<action name="createCandidacysimpleform" single="true" permission="Insert_candidacysimpleform" icon="add" labeli18n="m.joboffer.bo.actions.Create-candidacysimpleform" />
+		<action name="createCandidacyinquiryform" single="true" permission="Insert_candidacyinquiryform" icon="add" labeli18n="m.joboffer.bo.actions.Create-candidacyinquiryform" />
 	</actions>
 </perspective>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.frontoffice" lcid="en_GB">
+  <key id="background">required experience</key>
+  <key id="deposit-limit">application deadline</key>
+  <key id="empty-container">There are currently no job offers for this topic.</key>
+  <key id="location">location</key>
+  <key id="offer">offer</key>
+  <key id="profile">profile</key>
+  <key id="reference">reference</key>
+  <key id="spontaneous-candidacy">unsolicited application</key>
+  <key id="submit-candidacy">apply</key>
+  <key id="submit-candidacy-for-this-offer">apply for this offer</key>
+  <key id="view-list">see list of offers</key>
+</i18n>
