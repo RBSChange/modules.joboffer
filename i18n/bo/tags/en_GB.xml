@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.tags" lcid="en_GB">
+  <key id="candidacy-form">application form</key>
+  <key id="offer-detail">details of a job offer</key>
+  <key id="offer-list">list of job offers</key>
+  <key id="spontaneous-candidacy">unsolicited application</key>
+</i18n>

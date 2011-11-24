@@ -2,7 +2,7 @@
 <i18n baseKey="m.joboffer.bo.actions" lcid="en_GB">
   <key id="create_">create</key>
   <key id="create-offer">create a job offer</key>
-  <key id="create-candidacysimpleform">create a simple candidacy form</key>
-  <key id="create-candidacyinquiryform">create a candidacy form with workflow</key>
+  <key id="create-candidacysimpleform">create a simple application form</key>
+  <key id="create-candidacyinquiryform">create an application form with workflow</key>
   <key id="topic-already-contains-pages">This topic already contains pages.</key>
 </i18n>

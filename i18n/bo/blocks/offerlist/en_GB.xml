@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<i18n baseKey="m.joboffer.bo.blocks.offerlist" lcid="en_GB">
+  <key id="container">container</key>
+  <key id="container-help">This is the container of the job offers to display. Leave blank to display the contextual list of offers.</key>
+  <key id="nbitemsperpage">number of elements per page</key>
+  <key id="order">sorting</key>
+  <key id="title">list of job offers</key>
+</i18n>

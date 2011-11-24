@@ -101,10 +101,10 @@
 				</xul:columns>
 				<xul:rows>
 					<xul:row class="head" anonid="head-row">
-						<xul:label name="date" value="&amp;modules.joboffer.bo.doceditor.candidacies.Date-column;" />
-						<xul:label name="firstname" value="&amp;modules.joboffer.bo.doceditor.candidacies.Firstname-column;" />
-						<xul:label name="lastname" value="&amp;modules.joboffer.bo.doceditor.candidacies.Lastname-column;" />
-						<xul:label name="actionrow" value="&amp;modules.joboffer.bo.doceditor.candidacies.Actions-column;" />
+						<xul:label name="date" value="${trans:m.joboffer.bo.doceditor.candidacies.Date-column,ucf,attr}" />
+						<xul:label name="firstname" value="${trans:m.joboffer.bo.doceditor.candidacies.Firstname-column,ucf,attr}" />
+						<xul:label name="lastname" value="${trans:m.joboffer.bo.doceditor.candidacies.Lastname-column,ucf,attr}" />
+						<xul:label name="actionrow" value="${trans:m.joboffer.bo.doceditor.candidacies.Actions-column,ucf,attr}" />
 					</xul:row>
 				</xul:rows>
 			</xul:grid>
@@ -113,7 +113,7 @@
 				<xul:label value="" />
 				<xul:label value="" />
 				<xul:toolbar class="actions">
-					<xul:toolbarbutton action="edit" image="{IconsBase}/small/edit.png" tooltiptext="&amp;modules.uixul.bo.actions.Edit;" />
+					<xul:toolbarbutton action="edit" image="{IconsBase}/small/edit.png" tooltiptext="${trans:m.uixul.bo.actions.Edit,ucf,attr}" />
 				</xul:toolbar>
 			</xul:row>
 		</content>
