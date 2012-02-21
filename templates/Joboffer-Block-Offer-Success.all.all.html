@@ -1,25 +1,26 @@
 <ul class="mini-navigation" tal:condition="php: listPage OR spontaneousUrl">
-	<li><a tal:condition="listPage" change:link="document listPage" change:translate="modules.joboffer.frontoffice.View-list"></a></li>
-	<li><a class="link" tal:condition="spontaneousUrl" href="${spontaneousUrl}" change:translate="modules.joboffer.frontoffice.Spontaneous-candidacy"></a></li>
+	<li><a tal:condition="listPage" change:link="document listPage">${trans:m.joboffer.frontoffice.view-list,ucf}</a></li>
+	<li><a class="link" tal:condition="spontaneousUrl" href="${spontaneousUrl}">${trans:m.joboffer.frontoffice.spontaneous-candidacy,ucf}</a></li>
 </ul>
 
-<h2 change:h="">[${item/getOfferType/getLabelAsHtml}] ${item/getLabelAsHtml}</h2>
-<small>
-	<span tal:condition="item/getStartpublicationdate" change:date="format 'd/m/Y'; value item/getStartpublicationdate"></span>
-	<span tal:condition="not:item/getStartpublicationdate" change:date="format 'd/m/Y'; value item/getCreationdate"></span>
-	<tal:block tal:condition="item/getReference">- ${item/getReferenceAsHtml}</tal:block>
-</small>
-<div class="offer-description">${item/getDescriptionAsHtml}</div>
-<dl class="offer-infos">
+<h1 change:h="">[${item/getOfferType/getLabelAsHtml}] ${item/getLabelAsHtml}</h1>
+<p class="normal meta-infos">
+	<tal:block tal:condition="item/getStartpublicationdate">${date:item/getUIStartpublicationdate}</tal:block>
+	<tal:block tal:condition="not:item/getStartpublicationdate">${date:item/getUICreationdate}</tal:block>
+	<tal:block tal:condition="item/getReference"><span class="separator"> - </span>${item/getReferenceAsHtml}</tal:block>
+</p>
+<div class="normal">${item/getDescriptionAsHtml}</div>
+<dl class="normal">
 	<tal:block tal:condition="item/getEndpublicationdate" tal:omit-tag="">
-		<dt><strong change:translate="modules.joboffer.frontoffice.Deposit-limit"></strong></dt>
-		<dd><span change:date="format 'l d M Y'; value item/getEndpublicationdate"></span></dd>
+		<dt>${trans:m.joboffer.frontoffice.deposit-limit,ucf}</dt>
+		<dd>${date:item/getUIEndpublicationdate}</dd>
 	</tal:block>
-	<dt><strong change:translate="modules.joboffer.frontoffice.Location"></strong></dt>
+	<dt>${trans:m.joboffer.frontoffice.location,ucf}</dt>
 	<dd>${item/getLocationAsHtml}</dd>
-	<dt><strong change:translate="modules.joboffer.frontoffice.Background"></strong></dt>
+	<dt>${trans:m.joboffer.frontoffice.background,ucf}</dt>
 	<dd>${item/getBackgroundAsHtml}</dd>
-	<dt><strong change:translate="modules.joboffer.frontoffice.Profile"></strong></dt>
+	<dt>${trans:m.joboffer.frontoffice.profile,ucf}</dt>
 	<dd>${item/getProfileAsHtml}</dd>
 </dl>
-<a class="link button" href="${item/getFormPageUrl}" change:translate="modules.joboffer.frontoffice.Submit-candidacy-for-this-offer"></a>
+
+<a class="link" href="${item/getFormPageUrl}">${trans:m.joboffer.frontoffice.submit-candidacy-for-this-offer,ucf}</a>

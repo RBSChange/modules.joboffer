@@ -2,22 +2,20 @@
 	<li><a class="link" href="${spontaneousUrl}" change:translate="modules.joboffer.frontoffice.Spontaneous-candidacy"></a></li>
 </ul>
 
-<h2 change:h="">${container/getLabelAsHtml}</h2>
-<tal:block tal:condition="not:paginator">
-	<span change:translate="modules.joboffer.frontoffice.Empty-container"></span>
-</tal:block>
+<h1 change:h="">${container/getLabelAsHtml}</h1>
+<p tal:condition="not:paginator" class="normal">${trans:m.joboffer.frontoffice.empty-container,ucf}</p>
 <tal:block tal:condition="paginator">
-	<ol class="offers">
-		<li tal:repeat="item paginator">
-			<h3 change:h="">
+	<ol class="document-list">
+		<li tal:repeat="item paginator" class="${alternateclass:offerIndex}">
+			<h2 change:h="">
 				<a change:link="document item">[${item/getOfferType/getLabelAsHtml}] ${item/getLabelAsHtml}</a>
-			</h3>
-			<small>
-				<span tal:condition="item/getStartpublicationdate" change:date="format 'd/m/Y'; value item/getStartpublicationdate"></span>
-				<span tal:condition="not:item/getStartpublicationdate" change:date="format 'd/m/Y'; value item/getCreationdate"></span>
-				<tal:block tal:condition="item/getReference">- ${item/getReferenceAsHtml}</tal:block>
-			</small>
-			<p tal:content="item/getShortDescription" />
+			</h2>
+			<p class="normal meta-infos">
+				<tal:block tal:condition="item/getStartpublicationdate">${date:item/getUIStartpublicationdate}</tal:block>
+				<tal:block tal:condition="not:item/getStartpublicationdate">${date:item/getUICreationdate}</tal:block>
+				<tal:block tal:condition="item/getReference"><span class="separator"> - </span>${item/getReferenceAsHtml}</tal:block>
+			</p>
+			<p class="normal">${item/getShortDescription}</p>
 		</li>
 	</ol>
 	<tal:block change:paginator="paginator" />

@@ -10,7 +10,7 @@ class joboffer_persistentdocument_spontaneous extends joboffer_persistentdocumen
 	 */
 	public function getLabel()
 	{
-		return f_Locale::translateUI('&modules.joboffer.document.spontaneous.document-name;');
+		return LocaleService::getInstance()->transBO('m.joboffer.document.spontaneous.document-name');
 	}
 
 	/**
