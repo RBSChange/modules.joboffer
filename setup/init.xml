@@ -40,7 +40,7 @@
 	<systemfolder module="form" relatedmodule="joboffer">
 		<candidacysimpleform formid="modules_joboffer/simplecandidacy" label="Candidature à une offre d'emploi sur le site (sans workflow)" description=""
 			submitButton="Envoyer" confirmMessage="Nous avons bien reçu votre candidature. Elle sera traitée dans les meilleurs délais."
-			markup="default" useBackLink="true" useCaptcha="true" messageSendingType="1">
+			markup="default" useBackLink="true" useCaptcha="true">
 			<fieldmail fieldName="email" label="Adresse e-mail" required="true" multiline="false" cols="50" initializeWithCurrentUserEmail="true" />
 			<fielddate fieldName="birthdate" label="Date de naissance" required="true" />					
 			<fieldtext fieldName="postaladdress1" label="Adresse postale, ligne 1" required="true" multiline="false" cols="50" />	
