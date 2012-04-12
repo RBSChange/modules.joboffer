@@ -18,7 +18,7 @@
 		<documentRef type="modules_inquiry/inquiryform" byFormid="modules_joboffer/inquirycandidacy" id="iform" />
 	</systemfolder>
 	
-	<systemfolder module="list" relatedmodule="job">
+	<systemfolder module="list" relatedmodule="joboffer">
 		<editablelist byListid="modules_joboffer/offertype">	
 			<item byLabel="CDI" id="cdi" />
 			<item byLabel="CDD" id="cdd" />
