@@ -2,7 +2,7 @@
 <bindings xmlns="http://www.mozilla.org/xbl" xmlns:xbl="http://www.mozilla.org/xbl" xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-	<binding id="cCandidaciesPanel" extends="layout.cDocumentEditor#cDocumentEditorPanelProperties">
+	<binding id="offer_candidacies" extends="layout.cDocumentEditor#cDocumentEditorPanelProperties">
 		<implementation>
 			<constructor><![CDATA[
 				this.extendMethod('fireInitializeComplete', this.fireInitializeCompleteExtended);

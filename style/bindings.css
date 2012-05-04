@@ -1,6 +1,3 @@
-cdocumenteditor ccandidaciespanel{
-	-moz-binding: url(binding:modules.joboffer.cCandidacyEditor#cCandidaciesPanel);
-}
 gridlist.candidaciesJSON{
-	-moz-binding: url(binding:modules.joboffer.cCandidacyEditor#cCandidaciesGrid);
+	-moz-binding: url(binding:modules.joboffer.editor.offer.candidacies#cCandidaciesGrid);
 }

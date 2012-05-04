@@ -3,15 +3,9 @@
   <panel name="resume"/>
   <panel name="properties"/>
   <panel name="localization"/>
+  <panel name="candidacies" icon="joboffer" labeli18n="m.joboffer.bo.doceditor.tab.candidacies"/>
   <panel name="publication"/>
   <panel name="redirect"/>
   <panel name="history"/>
   <panel name="create"/>
-  <xul>
-    <javascript>
-      <constructor><![CDATA[
-				this.addTab('candidacies', '&modules.joboffer.bo.doceditor.tab.Candidacies;', 'joboffer');
-			]]></constructor>
-    </javascript>
-  </xul>
 </panels>
