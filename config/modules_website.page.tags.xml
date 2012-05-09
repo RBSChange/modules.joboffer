@@ -4,4 +4,5 @@
 	<tag label="&amp;modules.joboffer.bo.tags.offer-detail;" icon="joboffer">functional_joboffer_offer-detail</tag>
 	<tag label="&amp;modules.joboffer.bo.tags.candidacy-form;" icon="form">functional_joboffer_candidacy-form</tag>
 	<tag label="&amp;modules.joboffer.bo.tags.spontaneous-candidacy;" icon="form">functional_joboffer_spontaneous-candidacy</tag>
+	<tag label="&amp;modules.joboffer.bo.tags.default-spontaneous-candidacy;" icon="form">contextual_website_website_joboffer_spontaneous-candidacy</tag>
 </tags>

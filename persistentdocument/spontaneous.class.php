@@ -20,4 +20,12 @@ class joboffer_persistentdocument_spontaneous extends joboffer_persistentdocumen
 	{
 		return 'functional_joboffer_spontaneous-candidacy';
 	}
+
+	/**
+	 * @return string
+	 */
+	protected function getDefaultCandidacyTag()
+	{
+		return 'contextual_website_website_joboffer_spontaneous-candidacy';
+	}
 }

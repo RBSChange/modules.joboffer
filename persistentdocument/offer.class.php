@@ -68,7 +68,12 @@ class joboffer_persistentdocument_offer extends joboffer_persistentdocument_offe
 			'offerlabel' => $this->getLabel(),
 		);
 		$params['jobofferParam']['offerId'] = $this->getId();
-		return LinkHelper::getTagUrl($this->getCandidacyTag(), null, $params);
+		$url = LinkHelper::getTagUrl($this->getCandidacyTag(), null, $params);
+		if (!$url && $this->getDefaultCandidacyTag())
+		{
+			$url = LinkHelper::getTagUrl($this->getDefaultCandidacyTag(), null, $params);
+		}
+		return $url;
 	}
 	
 	/**
@@ -77,6 +82,14 @@ class joboffer_persistentdocument_offer extends joboffer_persistentdocument_offe
 	protected function getCandidacyTag()
 	{
 		return 'functional_joboffer_candidacy-form';
+	}
+	
+	/**
+	 * @return string
+	 */
+	protected function getDefaultCandidacyTag()
+	{
+		return null;
 	}
 	
 	/**
