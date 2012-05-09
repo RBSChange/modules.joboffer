@@ -68,4 +68,18 @@ class joboffer_SpontaneousService extends joboffer_OfferService
 		$doc = $this->createQuery()->add(Restrictions::published())->findUnique();
 		return ($doc === null) ? null : $doc->getFormPageUrl();
 	}
+	
+	/**
+	 * @param website_UrlRewritingService $urlRewritingService
+	 * @param joboffer_persistentdocument_spontaneous $document
+	 * @param website_persistentdocument_website $website
+	 * @param string $lang
+	 * @param array $parameters
+	 * @return f_web_Link | null
+	 */
+	public function getWebLink($urlRewritingService, $document, $website, $lang, $parameters)
+	{
+		$url = $this->getSpontaneousUrl();
+		return ($url) ? LinkHelper::buildLinkFromUrl($url) : null;
+	}
 }
