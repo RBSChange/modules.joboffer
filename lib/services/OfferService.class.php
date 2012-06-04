@@ -121,7 +121,7 @@ class joboffer_OfferService extends f_persistentdocument_DocumentService
 		$form = $document->getCandidacyForm();
 		if ($form === null || !$form->isPublished())
 		{
-			$this->setActivePublicationStatusInfo($document, '&modules.joboffer.document.offer.publication.no-published-form;');
+			$this->setActivePublicationStatusInfo($document, 'm.joboffer.document.offer.publication.no-published-form');
 			return false;
 		}
 		
