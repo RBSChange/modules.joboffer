@@ -11,7 +11,7 @@ class joboffer_persistentdocument_offer extends joboffer_persistentdocument_offe
 	 */
 	public function getShortDescription($maxLength = 200)
 	{
-		return f_util_StringUtils::shortenString(f_util_StringUtils::htmlToText($this->getDescription()), $maxLength);
+		return f_util_StringUtils::shortenString(f_util_HtmlUtils::htmlToText($this->getDescription()), $maxLength);
 	}
 	
 	/**
