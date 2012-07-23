@@ -35,6 +35,9 @@
 				<child model="modules_website/systemtopic" />
 				<child model="modules_joboffer/offer" />
 			</children>
+			<drops>
+				<drop model="modules_joboffer/offer" action="move" />
+			</drops>
 			<contextactions>
 				<contextaction name="openFolder" />
 				<contextaction name="edit" />
@@ -48,6 +51,9 @@
 				<child model="modules_website/systemtopic" />
 				<child model="modules_joboffer/offer" />
 			</children>
+			<drops>
+				<drop model="modules_joboffer/offer" action="move" />
+			</drops>
 			<contextactions>
 				<contextaction name="openFolder" />
 				<contextaction name="edit" />
