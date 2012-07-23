@@ -13,4 +13,5 @@
   <actiondef modulename="joboffer" actionname="deactivated.spontaneous" label="modules.joboffer.bo.useractionlogger.deactivated-spontaneous"/>
   <actiondef modulename="joboffer" actionname="reactivate.spontaneous" label="modules.joboffer.bo.useractionlogger.reactivate-spontaneous"/>
   <actiondef modulename="joboffer" actionname="move.spontaneous" label="modules.joboffer.bo.useractionlogger.move-spontaneous"/>
+  <actiondef modulename="joboffer" actionname="move.offer" label="m.joboffer.bo.useractionlogger.move-offer"/>
 </script>
