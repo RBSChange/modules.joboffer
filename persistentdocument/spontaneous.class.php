@@ -28,4 +28,12 @@ class joboffer_persistentdocument_spontaneous extends joboffer_persistentdocumen
 	{
 		return 'contextual_website_website_joboffer_spontaneous-candidacy';
 	}
+	
+	/**
+	 * @return boolean
+	 */
+	public function hasDescription()
+	{
+		return strip_tags($this->getDescription());
+	}
 }
