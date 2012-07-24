@@ -3,3 +3,5 @@
 </ul>
 
 <h1 change:h="">${trans:m.joboffer.frontoffice.spontaneous-candidacy,ucf}</h1>
+
+<div tal:condition="item/hasDescription" class="normal">${item/getDescriptionAsHtml}</div>

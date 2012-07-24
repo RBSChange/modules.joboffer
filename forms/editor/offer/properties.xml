@@ -4,11 +4,11 @@
 		<field name="label" hidehelp="true" />
 		<field name="reference" hidehelp="true" />
 		<field name="offertype" hidehelp="true" />
-		<field name="description" hidehelp="true" />
-		<field name="location" hidehelp="true" />
-		<field name="background" hidehelp="true" />
-		<field name="profile" hidehelp="true" />
-	</section>	
+		<field name="description" hidehelp="true" required="true" />
+		<field name="location" hidehelp="true" required="true" />
+		<field name="background" hidehelp="true" required="true" />
+		<field name="profile" hidehelp="true" required="true" />
+	</section>
 	<section labeli18n="modules.joboffer.bo.doceditor.fieldsgroup.Offer-management">
 		<field name="candidacyForm" relatedmodule="form" allow="modules_joboffer_candidacysimpleform,modules_joboffer_candidacyinquiryform" />
 		<field name="startpublicationdate" />

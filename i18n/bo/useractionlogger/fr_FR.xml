@@ -26,4 +26,6 @@
   <key id="log-move-spontaneous">log-move-spontaneous</key>
   <key id="move-offer">move.offer {destinationlabel} {lang} {documentlabel}</key>
   <key id="log-move-offer">log move offer</key>
+  <key id="updatetranslation-spontaneous">updatetranslation.spontaneous {lang} {documentlabel}</key>
+  <key id="log-updatetranslation-spontaneous">log updatetranslation spontaneous</key>
 </i18n>

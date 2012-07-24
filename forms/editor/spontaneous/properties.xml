@@ -2,6 +2,7 @@
 <panel>
 	<section labeli18n="modules.joboffer.bo.doceditor.fieldsgroup.Offer-definition">
 		<field name="reference" hidehelp="true" />
+		<field name="description" hidehelp="true" />
 	</section>	
 	<section labeli18n="modules.joboffer.bo.doceditor.fieldsgroup.Offer-management">
 		<field name="candidacyForm" relatedmodule="form" allow="modules_joboffer_candidacysimpleform,modules_joboffer_candidacyinquiryform" />

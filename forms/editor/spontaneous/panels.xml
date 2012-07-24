@@ -2,7 +2,8 @@
 <panels>
 	<panel name="resume" />
 	<panel name="properties" />
-	<panel name="candidacies" icon="joboffer" labeli18n="m.joboffer.bo.doceditor.tab.candidacies"/>
-	<panel name="publication"/>
-	<panel name="history"/>
+	<panel name="localization" />
+	<panel name="candidacies" icon="joboffer" labeli18n="m.joboffer.bo.doceditor.tab.candidacies" />
+	<panel name="publication" />
+	<panel name="history" />
 </panels>

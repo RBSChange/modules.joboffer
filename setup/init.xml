@@ -15,9 +15,9 @@
 		
 		<dynamiclist byListid="modules_zone/publishedcountries" id="l_countries" />
 	</systemfolder>
-		
+	
 	<rootfolder module="joboffer">
-		<spontaneous label="Candidatures spontanées" offertype-refid="cdi" description="-" location="-" background="-" profile="-" />
+		<spontaneous byLabel="m.joboffer.document.spontaneous.document-name" offertype-refid="cdi" />
 	</rootfolder>
 				
 	<systemfolder module="notification" relatedmodule="joboffer">

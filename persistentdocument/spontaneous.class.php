@@ -8,14 +8,6 @@ class joboffer_persistentdocument_spontaneous extends joboffer_persistentdocumen
 	/**
 	 * @return string
 	 */
-	public function getLabel()
-	{
-		return LocaleService::getInstance()->transBO('m.joboffer.document.spontaneous.document-name');
-	}
-
-	/**
-	 * @return string
-	 */
 	protected function getCandidacyTag()
 	{
 		return 'functional_joboffer_spontaneous-candidacy';
@@ -27,5 +19,13 @@ class joboffer_persistentdocument_spontaneous extends joboffer_persistentdocumen
 	protected function getDefaultCandidacyTag()
 	{
 		return 'contextual_website_website_joboffer_spontaneous-candidacy';
+	}
+	
+	/**
+	 * @return boolean
+	 */
+	public function hasDescription()
+	{
+		return strip_tags($this->getDescription());
 	}
 }
