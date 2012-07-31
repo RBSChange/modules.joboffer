@@ -10,7 +10,12 @@ class joboffer_SpontaneousScriptDocumentElement extends import_ScriptDocumentEle
      */
     protected function initPersistentDocument()
     {
-    	return joboffer_SpontaneousService::getInstance()->getNewDocumentInstance();
+    	$doc = joboffer_SpontaneousService::getInstance()->createQuery()->findUnique();
+    	if ($doc === null)
+    	{
+    		$doc = joboffer_SpontaneousService::getInstance()->getNewDocumentInstance();
+    	}
+    	return $doc;
     }
     
     /**
