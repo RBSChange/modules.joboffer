@@ -54,7 +54,7 @@ class joboffer_ModuleService extends ModuleBaseService
 		$field = $ts->getNewDocumentInstance();
 		$field->setLabel(f_Locale::translate('&modules.joboffer.bo.general.Default-firstname-label;'));
 		$field->setFieldName('firstname');
-		$field->setRequired(false);
+		$field->setRequired(true);
 		$field->setIsLocked(true);
 		$field->setMultiline(false);
 		$field->setCols(50);
@@ -64,7 +64,7 @@ class joboffer_ModuleService extends ModuleBaseService
 		$field = $ts->getNewDocumentInstance();
 		$field->setLabel(f_Locale::translate('&modules.joboffer.bo.general.Default-lastname-label;'));
 		$field->setFieldName('lastname');
-		$field->setRequired(false);
+		$field->setRequired(true);
 		$field->setIsLocked(true);
 		$field->setMultiline(false);
 		$field->setCols(50);
