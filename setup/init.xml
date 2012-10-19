@@ -35,6 +35,11 @@
 			subject="Clôture de la candidature numéro {inquiryId}"
 			body="&lt;strong&gt;La {inquiryLink} vient d'être clôturée.&lt;/strong&gt;"
 			availableparameters="{inquiryId}, {inquiryLabel}, {inquiryUrl}, {inquiryLink}, {inquiryCreationdate}" />
+			
+		<notification codename="modules_joboffer/createInquiry" id="n4" label="Création d'une candidature"
+			subject="Création d'une candidature : numéro {inquiryId}"
+			body="&lt;strong&gt;La {inquiryLink} vient d'être créée.&lt;/strong&gt;"
+			availableparameters="{inquiryId}, {inquiryLabel}, {inquiryUrl}, {inquiryLink}, {inquiryCreationdate}" />
 	</systemfolder>
 		
 	<systemfolder module="form" relatedmodule="joboffer">
@@ -58,7 +63,7 @@
 		<candidacyinquiryform formid="modules_joboffer/inquirycandidacy" label="Candidature à une offre d'emploi sur le site (avec workflow)" description=""
 			submitButton="Envoyer" confirmMessage="Nous avons bien reçu votre candidature. Elle sera traitée dans les meilleurs délais."
 			markup="default" useBackLink="true" useCaptcha="true" secured="false" inbox="Candidatures"
-			messageByAuthorNotification-refid="n1" messageByReceiverNotification-refid="n2" closeInquiryNotification-refid="n3">
+			messageByAuthorNotification-refid="n1" messageByReceiverNotification-refid="n2" closeInquiryNotification-refid="n3" createInquiryNotification-refid="n4">
 			<fieldmail byFieldName="email" label="Adresse e-mail" required="true" multiline="false" cols="50" initializeWithCurrentUserEmail="true" />
 			<fielddate fieldName="birthdate" label="Date de naissance" required="true" />					
 			<fieldtext fieldName="postaladdress1" label="Adresse postale, ligne 1" required="true" multiline="false" cols="50" />	
