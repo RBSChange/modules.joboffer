@@ -9,7 +9,7 @@ class joboffer_SpontaneousService extends joboffer_OfferService
 	 * @var joboffer_SpontaneousService
 	 */
 	private static $instance;
-
+	
 	/**
 	 * @return joboffer_SpontaneousService
 	 */
@@ -21,7 +21,7 @@ class joboffer_SpontaneousService extends joboffer_OfferService
 		}
 		return self::$instance;
 	}
-
+	
 	/**
 	 * @return joboffer_persistentdocument_spontaneous
 	 */
@@ -29,7 +29,7 @@ class joboffer_SpontaneousService extends joboffer_OfferService
 	{
 		return $this->getNewDocumentInstanceByModelName('modules_joboffer/spontaneous');
 	}
-
+	
 	/**
 	 * Create a query based on 'modules_joboffer/spontaneous' model.
 	 * Return document that are instance of modules_joboffer/spontaneous,
@@ -82,4 +82,14 @@ class joboffer_SpontaneousService extends joboffer_OfferService
 		$url = $this->getSpontaneousUrl();
 		return ($url) ? LinkHelper::buildLinkFromUrl($url) : null;
 	}
+	
+	/**
+	 * @param joboffer_persistentdocument_spontaneous $document
+	 * @return string|null
+	 */
+	public function getNavigationLabel($document)
+	{
+		return LocaleService::getInstance()->transFO($document->getLabel(), array('ucf'));
+	}
+
 }

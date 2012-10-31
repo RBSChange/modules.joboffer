@@ -65,7 +65,7 @@ class joboffer_persistentdocument_offer extends joboffer_persistentdocument_offe
 			'cmpref' => $form->getId(),
 			'offerid' => $this->getId(),
 			'offerref' => $this->getReference(),
-			'offerlabel' => $this->getLabel(),
+			'offerlabel' => $this->getNavigationLabel(),
 		);
 		$params['jobofferParam']['offerId'] = $this->getId();
 		$url = LinkHelper::getTagUrl($this->getCandidacyTag(), null, $params);
