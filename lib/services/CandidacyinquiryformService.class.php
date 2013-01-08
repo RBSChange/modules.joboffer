@@ -9,7 +9,7 @@ class joboffer_CandidacyinquiryformService extends inquiry_InquiryformService
 	 * @var joboffer_CandidacyinquiryformService
 	 */
 	private static $instance;
-
+	
 	/**
 	 * @return joboffer_CandidacyinquiryformService
 	 */
@@ -21,7 +21,7 @@ class joboffer_CandidacyinquiryformService extends inquiry_InquiryformService
 		}
 		return self::$instance;
 	}
-
+	
 	/**
 	 * @return joboffer_persistentdocument_candidacyinquiryform
 	 */
@@ -29,7 +29,7 @@ class joboffer_CandidacyinquiryformService extends inquiry_InquiryformService
 	{
 		return $this->getNewDocumentInstanceByModelName('modules_joboffer/candidacyinquiryform');
 	}
-
+	
 	/**
 	 * Create a query based on 'modules_joboffer/candidacyinquiryform' model.
 	 * Return document that are instance of modules_joboffer/candidacyinquiryform,
@@ -67,14 +67,30 @@ class joboffer_CandidacyinquiryformService extends inquiry_InquiryformService
 		$inquiry = $result['inquiry'];
 		if ($inquiry instanceof inquiry_persistentdocument_inquiry)
 		{
+			$offer = DocumentHelper::getDocumentInstance($inquiry->getResponseFieldValue('offerid'), 'modules_joboffer/offer');
 			$candidacy = joboffer_CandidacyService::getInstance()->getNewDocumentInstance();
+			
+			if ($offer instanceof joboffer_persistentdocument_spontaneous)
+			{
+				$label = LocaleService::getInstance()->transFO('m.joboffer.frontoffice.spontaneous-candidacy', array());
+			}
+			else
+			{
+				$label = LocaleService::getInstance()->transFO('m.joboffer.frontoffice.candidacy-for-offer', array(), array(
+					'offerLabel' => $offer->getLabel()));
+			}
+			
+			$candidacy->setLabel(substr($label, 0, 254));
 			$candidacy->setForm($form);
-			$candidacy->setOffer(DocumentHelper::getDocumentInstance($inquiry->getResponseFieldValue('offerid'), 'modules_joboffer/offer'));
+			$candidacy->setOffer($offer);
 			$candidacy->setResponseId($inquiry->getId());
 			$candidacy->setFirstName($response->getResponseFieldValue('firstname'));
 			$candidacy->setLastName($response->getResponseFieldValue('lastname'));
 			$candidacy->save();
 			$result['candidacy'] = $candidacy;
+			
+			$inquiry->setTagetId($candidacy->getId());
+			$inquiry->save();
 		}
 		else
 		{
@@ -83,7 +99,7 @@ class joboffer_CandidacyinquiryformService extends inquiry_InquiryformService
 		
 		return $result;
 	}
-
+	
 	/**
 	 * @param joboffer_persistentdocument_candidacyinquiryform $document
 	 * @param Integer $parentNodeId Parent node ID where to save the document.

@@ -11,4 +11,5 @@
   <key id="reference">référence</key>
   <key id="spontaneous-candidacy">candidature spontanée</key>
   <key id="empty-container">Il n'y a actuellement aucune offre d'emploi dans cette rubrique.</key>
+  <key id="candidacy-for-offer">candidature pour l'offre : {offerLabel}</key>
 </i18n>
