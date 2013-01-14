@@ -11,4 +11,5 @@
   <key id="submit-candidacy">apply</key>
   <key id="submit-candidacy-for-this-offer">apply for this offer</key>
   <key id="view-list">see list of offers</key>
+  <key id="candidacy-for-offer">candidacy for the offer : {offerLabel}</key>
 </i18n>
